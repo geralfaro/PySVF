@@ -1,0 +1,10 @@
+README
+setup.py
+PySVF/grid.c
+PySVF/grid_c.cpp
+PySVF/io.c
+PySVF/io_c.cpp
+UNKNOWN.egg-info/PKG-INFO
+UNKNOWN.egg-info/SOURCES.txt
+UNKNOWN.egg-info/dependency_links.txt
+UNKNOWN.egg-info/top_level.txt

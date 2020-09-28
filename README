@@ -1,0 +1,149 @@
+========================================================================================
+allvars.h - allvars.c
+========================================================================================
+
+Declaracion de variables globales. Todos las rutinas pueden acceder y
+modificar las variables y estructuras de datos declaras aca.
+
+========================================================================================
+io.c
+========================================================================================
+
+* ReadInputFile
+* ReadTracers
+* ReadTracers_ASCII
+* ReadTracers_BINARY
+* ReadTracers_GADGET1 
+* ReadTracers_GADGET2
+
+Rutinas de lectura de los catálogos de tracers en diferentes formatos: ASCII,
+Gadget y Binario.
+
+* RedshiftSpaceDistortions
+* GeometricalDistortions
+
+Rutinas para aplicar redshift-space distortions (efecto Kaiser) y distorciones
+por cosmologia fiducial (efecto Alcock-Paczynski).
+
+* WriteVoids
+
+Rutina de escritura del catalogo de voids.
+
+========================================================================================
+grid.c
+========================================================================================
+
+* BuildGridList
+
+Rutinas para gridear la simulacion y armar una lista de linkeo.
+
+* SearchNeighbours
+
+Dado un grid, devuelve los 27 grides vecinos.
+
+* FreeGridList
+* FreeNeighbours
+
+Libera memoria
+
+========================================================================================
+finder.c
+========================================================================================
+
+* FindCenters
+
+Localiza los centros subdensos candidatos a void
+
+* FindVoids
+
+Identificación del void propiamente dicho
+
+* CleanVoids
+
+Limpieza por superposicion
+
+========================================================================================
+profiles.c
+========================================================================================
+
+* ComputeProfiles
+
+Calcula los perfiles de los voids en densidad diferencial, densidad integrada
+y velocidad.
+
+========================================================================================
+velocity.c
+========================================================================================
+
+* ComputeVelocity
+
+Calcula la velocidad de los voids usando la informacion del shell
+
+========================================================================================
+voronoi.c
+========================================================================================
+
+* ComputeVoronoi
+
+Calcula la teselacion de Voronoi de los tracers usando voro++
+
+========================================================================================
+tools.c
+========================================================================================
+
+* PeriodicGrid
+* PeriodicPos
+* PeriodicDeltaPos
+
+Periodicidad para los grides, posiciones y distancias.
+
+* Index1D
+* Index3D
+
+Convierte indices 3D en 1D y viceversa
+
+* CountLines
+
+Contador de lineas de files ASCII
+
+* Time
+
+Tiempo de corrida 
+
+* StatsTime
+
+Resumen de tiempos de corrida de cada parte del codigo
+
+* Progress
+
+Barra de progreso
+
+* RandomNumber
+
+Generador de numeros randoms uniformes
+
+* LnFactorial
+
+Logaritmo natural del factorial 
+
+* SafeOpen
+
+Revisa que el file exista antes de intentar abrirlo
+
+========================================================================================
+qromb.c
+========================================================================================
+
+Rutintas del NR para integrar
+
+========================================================================================
+qsort.c
+========================================================================================
+
+Rutinas para ordenar
+
+
+
+
+
+
