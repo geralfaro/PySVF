@@ -4,7 +4,7 @@
 {
     "distutils": {
         "depends": [
-            "PySVF/io.c"
+            "PySVF/proto.h"
         ],
         "include_dirs": [
             "PySVF"
@@ -638,7 +638,7 @@ static CYTHON_INLINE float __PYX_NAN() {
 #define __PYX_HAVE__io_c
 #define __PYX_HAVE_API__io_c
 /* Early includes */
-#include "io.c"
+#include "proto.h"
 #ifdef _OPENMP
 #include <omp.h>
 #endif /* _OPENMP */
@@ -1059,10 +1059,10 @@ static PyObject *__pyx_pf_4io_c_ReadInput(CYTHON_UNUSED PyObject *__pyx_self); /
 /* Late includes */
 
 /* "io_c.pyx":6
- *     void ReadInputFile()
+ *     void ReadInputFile(char *)
  * 
  * cpdef ReadInput():             # <<<<<<<<<<<<<<
- *     ReadInputFile()
+ *     ReadInputFile("asd.dat")
  * 
  */
 
@@ -1075,16 +1075,16 @@ static PyObject *__pyx_f_4io_c_ReadInput(CYTHON_UNUSED int __pyx_skip_dispatch) 
   /* "io_c.pyx":7
  * 
  * cpdef ReadInput():
- *     ReadInputFile()             # <<<<<<<<<<<<<<
+ *     ReadInputFile("asd.dat")             # <<<<<<<<<<<<<<
  * 
  */
-  ReadInputFile();
+  ReadInputFile(((char *)"asd.dat"));
 
   /* "io_c.pyx":6
- *     void ReadInputFile()
+ *     void ReadInputFile(char *)
  * 
  * cpdef ReadInput():             # <<<<<<<<<<<<<<
- *     ReadInputFile()
+ *     ReadInputFile("asd.dat")
  * 
  */
 
@@ -1474,7 +1474,7 @@ if (!__Pyx_RefNanny) {
   /* "io_c.pyx":1
  * # distutils: language = c++             # <<<<<<<<<<<<<<
  * 
- * cdef extern from "io.c":
+ * cdef extern from "proto.h":
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

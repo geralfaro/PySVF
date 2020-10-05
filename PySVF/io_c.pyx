@@ -1,8 +1,8 @@
 # distutils: language = c++
 
 cdef extern from "io.c":
-    void ReadInputFile()
+    void ReadInputFile(char *)
 
 cpdef ReadInput():
-    ReadInputFile()
+    ReadInputFile("asd.dat")
 
