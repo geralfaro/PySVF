@@ -1,0 +1,10 @@
+# Include the README
+include README.md
+
+# Include the license file
+# include LICENSE.txt
+
+# Include the C source files
+PySVF/special_funcs.c
+PySVF/special_funcs.h
+PySVF/svfmodule.c
