@@ -22,44 +22,11 @@ using namespace voro;
 #define HALFPI (0.5*PI)
 #define CVEL   299792.469 
 
-extern double RadIncrement;
-extern int    NumRanWalk;
-extern double BoxSize;          
-extern double MaxRadiusSearch;  
-extern double FracRadius;       
-extern double DeltaThreshold;   
-extern double DeltaSeed;        
-extern double OverlapTol;   
-extern int    FormatTracers;
-extern int    NumFiles;
-extern char   FileTracers[MAXCHAR];      
-extern char   FileVoids[MAXCHAR];        
 extern int    OMPcores;         
-extern int    RSDist;           
-extern double Redshift;         
-extern double OmegaMatter;
-extern double OmegaLambda;
-extern double Hubble;           
-extern int    GDist;           
-extern double FidOmegaMatter;        
-extern double FidOmegaLambda;        
-extern double FidHubble;        
-extern int    WriteProfiles;    
-extern double MinProfileDist;   
-extern double MaxProfileDist;   
-extern int    NumProfileBins;   
-extern char   PathProfiles[MAXCHAR];     
-extern double InnerShellVel;  
-extern double OuterShellVel;  
-extern double ScalePos;
-extern double ScaleVel;
-
 extern vector <double> StepTime;
 extern vector <string> StepName;   
-
 extern int    NumTrac;
 extern double MeanNumTrac;
-extern double MeanSeparation;
 extern int    NumVoid;
 extern double LBox[3];
 extern FILE   *logfile;
@@ -99,12 +66,6 @@ struct grid {
   int *Neighbour;
 };
 
-// Sorting
-
-struct sort {
-  int    ord;
-  float val;  
-};
 
 // Neighbours
 
@@ -112,6 +73,13 @@ struct neighbour {
    vector <int> i;	
    vector <int> j;	
    vector <int> k;
+};
+
+// Sorting
+
+struct sort {
+  int    ord;
+  float val;  
 };
 
 // Cosmologia para GDist y RSDist

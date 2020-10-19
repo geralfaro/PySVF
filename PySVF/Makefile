@@ -20,7 +20,7 @@ EXEC = main.x
 OBJS = allvars.o qromb.o tools.o io.o qsort.o grid.o finder.o \
        velocity.o profiles.o voronoi.o main.o
 
-INCL = allvars.h proto.h Makefile
+INCL = allvars.h qromb.h tools.h io.h qsort.h grid.h finder.h velocity.h profiles.h voronoi.h Makefile
 
 CFLAGS += $(OMP) $(VORO_INC) 
 

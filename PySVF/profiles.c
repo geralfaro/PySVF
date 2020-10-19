@@ -1,6 +1,5 @@
-
 #include "allvars.h"
-#include "proto.h"
+#include "profiles.h"
 
 void ComputeProfiles()
 {

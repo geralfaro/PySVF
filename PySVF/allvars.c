@@ -1,19 +1,20 @@
-
 #include "allvars.h"
+#include "io.h"
 
-double RadIncrement;
-int    NumRanWalk;
 double BoxSize;          
 double MaxRadiusSearch;  
-double FracRadius;       
 double DeltaThreshold;   
 double DeltaSeed;        
-double OverlapTol;      
+double OverlapTol;   
 int    FormatTracers;
 int    NumFiles;
 char   FileTracers[MAXCHAR];      
 char   FileVoids[MAXCHAR];        
+double ScalePos;
 int    OMPcores;         
+double RadIncrement;
+int    NumRanWalk;
+double FracRadius;       
 int    RSDist;           
 double Redshift;         
 double OmegaMatter;
@@ -30,20 +31,20 @@ int    NumProfileBins;
 char   PathProfiles[MAXCHAR];     
 double InnerShellVel;  
 double OuterShellVel;  
-double ScalePos;
 double ScaleVel;
 
-vector <double> StepTime;
-vector <string> StepName;
-
-int    NumTrac;
+FILE   *logfile;
+double LBox[3];
 double MeanNumTrac;
+int    NumTrac;
 double MeanSeparation;
 int    NumVoid;
-double LBox[3];
-FILE   *logfile;
 
-struct tracers *Tracer;
-vector <voids> Void;
+vector<double> StepTime;
+vector<string> StepName;
+
 struct params  Cosmo;
+struct tracers *Tracer;
+vector<voids> Void;
 
+double E(double);

@@ -1,5 +1,5 @@
 #include "allvars.h"
-#include "proto.h"
+#include "finder.h"
 
 void FindCenters()
 {

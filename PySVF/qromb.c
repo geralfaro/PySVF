@@ -1,6 +1,5 @@
-
 #include "allvars.h"
-#include "proto.h"
+#include "qromb.h"
 
 #define EPS   1.0e-6
 #define JMAX  20

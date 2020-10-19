@@ -1,6 +1,13 @@
-
 #include "allvars.h"
-#include "proto.h"
+#include "qromb.h"
+#include "tools.h"
+#include "io.h" 
+#include "qsort.h" 
+#include "grid.h" 
+#include "finder.h" 
+#include "velocity.h" 
+#include "profiles.h" 
+#include "voronoi.h"
 
 int main(int argc, char **argv) 
 {

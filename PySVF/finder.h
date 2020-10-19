@@ -1,0 +1,26 @@
+
+void FindCenters(void);      
+extern double FracRadius;       
+extern double DeltaThreshold;
+extern double DeltaSeed;        
+double       Time(clock_t, int);   
+extern double RadIncrement;
+extern int    NumRanWalk;
+double       RandomNumber(void);
+extern int    NumRanWalk;
+double       PeriodicPos(double,double);
+int          Index1D(int,int,int,int);
+int          PeriodicGrid(int,int);
+double       PeriodicDeltaPos(double,double);
+void FindVoids(void);
+void BuildGridList(struct grid *, int, double *, int, bool);
+extern double MaxRadiusSearch;  
+void SearchNeighbours(struct neighbour *, int *, double *, double, double);
+void QSort(struct sort *, int, int);
+double       LnFactorial(int);
+void         FreeNeighbours(struct neighbour *);
+void         FreeGridList(struct grid *, int);
+extern double OverlapTol;   
+void CleanVoids(void);
+void ComputeVelocity(void);
+void ComputeProfiles(void);
